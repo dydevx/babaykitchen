@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bà Bảy Kitchen | Vietnamesische Küche in Braunschweig</title>
+    <meta
+      name="description"
+      content="Bà Bảy Kitchen in Braunschweig: authentische vietnamesische Küche mit Phở, Bún, vegetarischen Optionen und hausgemachten Soßen."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Bà Bảy Kitchen",
+        "servesCuisine": "Vietnamesisch",
+        "telephone": "+49531346568",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gliesmarodestrasse 53",
+          "postalCode": "38106",
+          "addressLocality": "Braunschweig",
+          "addressCountry": "DE"
+        },
+        "priceRange": "€€"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Bà Bảy Kitchen Startseite">
+        <span class="brand-mark">BB</span>
+        <span>
+          <strong>Bà Bảy Kitchen</strong>
+          <small>Braunschweig</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span>Menü</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#home">Startseite</a>
+        <a href="#menu">Speisekarte</a>
+        <a href="#about">Über uns</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Authentische vietnamesische Küche in Braunschweig</p>
+          <h1 id="hero-title">Bà Bảy Kitchen</h1>
+          <p class="hero-copy">
+            Herzlich willkommen. Schön, dass Sie bei uns zu Gast sind. Bei Bà Bảy Kitchen
+            erwartet Sie frisch zubereitetes Essen mit hochwertigen Zutaten und viel Liebe zum Detail.
+          </p>
+          <div class="hero-actions" aria-label="Schnelle Aktionen">
+            <a class="button primary" href="#menu">
+              <i data-lucide="utensils" aria-hidden="true"></i>
+              Speisekarte ansehen
+            </a>
+            <a class="button light" href="tel:+49531346568">
+              <i data-lucide="phone" aria-hidden="true"></i>
+              Jetzt anrufen
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Restaurant Hinweise">
+        <div>
+          <i data-lucide="leaf" aria-hidden="true"></i>
+          <span>Vegetarische Optionen verfügbar</span>
+        </div>
+        <div>
+          <i data-lucide="flame" aria-hidden="true"></i>
+          <span>Hausgemachte Soßen, leicht scharf</span>
+        </div>
+        <div>
+          <i data-lucide="badge-euro" aria-hidden="true"></i>
+          <span>Selbst abholen & Geld sparen</span>
+        </div>
+      </section>
+
+      <section class="section intro" aria-labelledby="intro-title">
+        <div class="section-inner split">
+          <div>
+            <p class="section-kicker">Frisch gekocht</p>
+            <h2 id="intro-title">Vietnamesische Klassiker mit Herz</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              Unsere Spezialitäten sind traditionelle Phở-Suppen, aromatische Bún-Gerichte
+              und hausgemachte Soßen. Wir kochen frisch und verzichten bewusst auf Fertigprodukte.
+            </p>
+            <p>
+              Einzelne Gerichte können ausverkauft sein, weil bei uns Qualität und frische
+              Zubereitung an erster Stelle stehen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Speisekarte</p>
+            <h2 id="menu-title">Phở, Bún, vegetarische Gerichte & Getränke</h2>
+          </div>
+
+          <div class="menu-layout">
+            <article class="menu-group featured">
+              <div class="group-heading">
+                <span class="group-icon"><i data-lucide="heart" aria-hidden="true"></i></span>
+                <div>
+                  <p>Unser Herzstück</p>
+                  <h3>Phở</h3>
+                </div>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/pho-nam.jpg" width="480" height="480" alt="Phở nạm bò" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Phở nạm bò</h4>
+                  <p>Reisbandnudelsuppe mit Rindfleisch (Brust)</p>
+                  <span class="allergens">A, D, F, I</span>
+                </div>
+                <strong>15,50 €</strong>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/pho-tai-lan.jpg" width="480" height="480" alt="Phở tái lăn" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Phở tái lăn</h4>
+                  <p>Kurz angebratenes Rindfleisch, besonders aromatisch</p>
+                  <span class="allergens">A, D, F</span>
+                </div>
+                <strong>15,90 €</strong>
+              </div>
+              <p class="group-note">Hausgemachte Chilisauce mit intensivem Geschmack.</p>
+            </article>
+
+            <article class="menu-group">
+              <div class="group-heading">
+                <span class="group-icon"><i data-lucide="wheat" aria-hidden="true"></i></span>
+                <div>
+                  <p>Knusprig & aromatisch</p>
+                  <h3>Vorspeise</h3>
+                </div>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/cha-gio-ga.jpg" width="480" height="480" alt="Chả giò gà" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Chả giò gà (3 Stück)</h4>
+                  <p>Frühlingsrollen mit Hähnchen & Nước mắm</p>
+                  <span class="allergens">A, D, F</span>
+                </div>
+                <strong>6,50 €</strong>
+              </div>
+            </article>
+
+            <article class="menu-group">
+              <div class="group-heading">
+                <span class="group-icon"><i data-lucide="sprout" aria-hidden="true"></i></span>
+                <div>
+                  <p>Vegetarisch</p>
+                  <h3>Ohne Fleisch</h3>
+                </div>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/mi-bio-chay-dac-biet.jpg" width="480" height="480" alt="Mì Bio chay đặc biệt" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Mì Bio chay đặc biệt</h4>
+                  <p>Bissfest und besonders herzhaft</p>
+                  <span class="allergens">A, C, F</span>
+                </div>
+                <strong>12,90 €</strong>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/pho-tron-chay-tofu-ba-bay.jpg" width="480" height="480" alt="Phở trộn chay Tofu Bà Bảy" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Phở trộn chay Tofu Bà Bảy</h4>
+                  <p>Tofu mit Reisbandnudeln und hausgemachter Soße</p>
+                  <span class="allergens">A, F</span>
+                </div>
+                <strong>12,50 €</strong>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/bun-dau-nuoc-tuong.jpg" width="480" height="480" alt="Bún đậu nước tương" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Bún đậu nước tương</h4>
+                  <p>Reisnudeln mit Tofu</p>
+                  <span class="allergens">A, F</span>
+                </div>
+                <strong>11,90 €</strong>
+              </div>
+            </article>
+
+            <article class="menu-group featured-alt">
+              <div class="group-heading">
+                <span class="group-icon"><i data-lucide="star" aria-hidden="true"></i></span>
+                <div>
+                  <p>Signature Dish</p>
+                  <h3>Mì bò trộn</h3>
+                </div>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/mi-bo-tron.jpg" width="480" height="480" alt="Mì bò trộn" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Mì bò trộn</h4>
+                  <p>Aromatische Eiernudeln mit zartem Rindfleisch, ramen-style inspiriert</p>
+                  <span class="allergens">A, C, F</span>
+                </div>
+                <strong>14,50 €</strong>
+              </div>
+              <p class="group-note">Intensiv, würzig, einzigartig.</p>
+            </article>
+
+            <article class="menu-group">
+              <div class="group-heading">
+                <span class="group-icon"><i data-lucide="soup" aria-hidden="true"></i></span>
+                <div>
+                  <p>Beliebt</p>
+                  <h3>Reisnudelgerichte</h3>
+                </div>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/bun-bo-nam-bo.jpg" width="480" height="480" alt="Bún bò Nam Bộ" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Bún bò Nam Bộ</h4>
+                  <p>Reisnudeln mit gebratenem Rindfleisch, frischen Kräutern & Erdnüssen</p>
+                  <span class="allergens">D, E, F</span>
+                </div>
+                <strong>13,90 €</strong>
+              </div>
+            </article>
+
+            <article class="menu-group">
+              <div class="group-heading">
+                <span class="group-icon"><i data-lucide="cookie" aria-hidden="true"></i></span>
+                <div>
+                  <p>Süßer Abschluss</p>
+                  <h3>Dessert</h3>
+                </div>
+              </div>
+              <div class="menu-item has-photo">
+              <figure class="dish-thumb">
+                <img src="images/menu/che-troi-nuoc-me-den.jpg" width="480" height="480" alt="Chè trôi nước mè đen" decoding="async" loading="lazy" />
+              </figure>
+                <div>
+                  <h4>Chè trôi nước mè đen</h4>
+                  <p>Klebreisbällchen mit schwarzem Sesam & Kokosmilch</p>
+                  <span class="allergens">K, G</span>
+                </div>
+                <strong>6,50 €</strong>
+              </div>
+            </article>
+
+            <article class="menu-group drinks">
+              <div class="group-heading">
+                <span class="group-icon"><i data-lucide="glass-water" aria-hidden="true"></i></span>
+                <div>
+                  <p>Kalt & erfrischend</p>
+                  <h3>Getränke</h3>
+                </div>
+              </div>
+              <div class="drink-grid" aria-label="Getränkeauswahl">
+                <div class="drink-card">
+                  <figure class="drink-photo">
+                    <img src="images/menu/fritz-kola.jpg" width="480" height="480" alt="Fritz-Kola" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">0,33 L</span>
+                    <h4>Fritz-Kola</h4>
+                  </div>
+                  <strong>3,50 €</strong>
+                </div>
+
+                <div class="drink-card">
+                  <figure class="drink-photo">
+                    <img src="images/menu/fritz-orange.jpg" width="480" height="480" alt="Fritz Orange" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">0,33 L</span>
+                    <h4>Fritz Orange</h4>
+                  </div>
+                  <strong>3,50 €</strong>
+                </div>
+
+                <div class="drink-card">
+                  <figure class="drink-photo">
+                    <img src="images/menu/fritz-zitrone.jpg" width="480" height="480" alt="Fritz Zitrone" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">0,33 L</span>
+                    <h4>Fritz Zitrone</h4>
+                  </div>
+                  <strong>3,50 €</strong>
+                </div>
+
+                <div class="drink-card">
+                  <figure class="drink-photo">
+                    <img src="images/menu/fritz-mischmasch.jpg" width="480" height="480" alt="Fritz Mischmasch" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">0,33 L</span>
+                    <h4>Fritz Mischmasch</h4>
+                  </div>
+                  <strong>3,50 €</strong>
+                </div>
+
+                <div class="drink-card">
+                  <figure class="drink-photo">
+                    <img src="images/menu/still.jpg" width="480" height="480" alt="Wasser still" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">0,33 L</span>
+                    <h4>Wasser still</h4>
+                  </div>
+                  <strong>2,90 €</strong>
+                </div>
+
+                <div class="drink-card">
+                  <figure class="drink-photo">
+                    <img src="images/menu/sprudel.jpg" width="480" height="480" alt="Wasser sprudel" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">0,33 L</span>
+                    <h4>Wasser sprudel</h4>
+                  </div>
+                  <strong>2,90 €</strong>
+                </div>
+
+                <div class="drink-card drink-card-large">
+                  <figure class="drink-photo">
+                    <img src="images/menu/nuoc-da-chanh.jpg" width="480" height="480" alt="Nước đá chanh" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">Hausgemacht</span>
+                    <h4>Nước đá chanh</h4>
+                    <p>Frischer Limettendrink mit Eis, nur vor Ort erhältlich</p>
+                  </div>
+                  <strong>3,90 €</strong>
+                </div>
+
+                <div class="drink-card drink-card-large">
+                  <figure class="drink-photo">
+                    <img src="images/menu/ca-phe-sua-da.jpg" width="480" height="480" alt="Cà phê sữa đá" decoding="async" loading="lazy" />
+                  </figure>
+                  <div class="drink-copy">
+                    <span class="drink-tag">Hausgemacht</span>
+                    <h4>Cà phê sữa đá</h4>
+                    <p>Vietnamesischer Eiskaffee mit Kondensmilch, nur vor Ort erhältlich</p>
+                    <span class="allergens">G</span>
+                  </div>
+                  <strong>4,50 €</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="allergen-box" aria-labelledby="allergen-title">
+            <h3 id="allergen-title">Allergene</h3>
+            <p>
+              A Gluten | B Krebstiere | C Eier | D Fisch | E Erdnüsse | F Soja |
+              G Milch | H Nüsse | I Sellerie | J Senf | K Sesam | L Sulfite
+            </p>
+            <p>Alle Speisen werden frisch zubereitet. Spuren sind möglich.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-inner about-grid">
+          <div>
+            <p class="section-kicker">Über uns</p>
+            <h2 id="about-title">Für alle, die echtes vietnamesisches Essen lieben</h2>
+          </div>
+          <div class="about-panel">
+            <p>
+              Bà Bảy Kitchen steht für authentische vietnamesische Küche mit Herz in Braunschweig.
+              Wir legen Wert auf hochwertige Zutaten, hausgemachte Soßen und Gerichte, die frisch
+              für Sie zubereitet werden.
+            </p>
+            <ul class="check-list">
+              <li><i data-lucide="check" aria-hidden="true"></i> Traditionelle Phở-Suppen</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Aromatische Bún-Gerichte</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Keine Fertigprodukte</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Vegetarische Optionen</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Kontakt</p>
+            <h2 id="contact-title">Besuchen, anrufen oder per WhatsApp schreiben</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-details">
+              <address>
+                <strong>Bà Bảy Kitchen</strong>
+                <span>Gliesmarodestrasse 53</span>
+                <span>38106 Braunschweig</span>
+              </address>
+              <div class="contact-actions">
+                <a class="button primary" href="tel:+49531346568">
+                  <i data-lucide="phone" aria-hidden="true"></i>
+                  0531 / 346568
+                </a>
+                <a class="button secondary" href="tel:+4915159179618">
+                  <i data-lucide="smartphone" aria-hidden="true"></i>
+                  0151 / 59179618
+                </a>
+                <a
+                  class="button whatsapp"
+                  href="https://wa.me/4915159179618?text=Hallo%20B%C3%A0%20B%E1%BA%A3y%20Kitchen%2C%20ich%20m%C3%B6chte%20gerne%20bestellen."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i data-lucide="message-circle" aria-hidden="true"></i>
+                  WhatsApp
+                </a>
+                <a
+                  class="button secondary"
+                  href="https://maps.app.goo.gl/HJpcukgPgy7riQx27"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  Route planen
+                </a>
+              </div>
+            </div>
+
+            <div class="map-wrap" aria-label="Google Maps Standort">
+              <iframe
+                title="Bà Bảy Kitchen auf Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.6987807717105!2d10.542900792910041!3d52.27679778201439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aff5dc33fab953%3A0x822387acb28428c7!2zQsOgIELhuqN5IEtpdGNoZW4!5e1!3m2!1svi!2s!4v1778160258003!5m2!1svi!2s"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p>© <span data-year></span> Bà Bảy Kitchen. Vietnamesische Küche in Braunschweig.</p>
+      </div>
+    </footer>
+  </body>
+</html>
