@@ -178,7 +178,7 @@ button {
 }
 
 .hero-photo {
-  background-image: url("images/background.jpg"), url("images/menu/background.jpg");
+  background-image: url("images/menu/background.jpg");
   background-position: center;
   background-size: cover;
   transform: scale(1.02);
@@ -550,6 +550,7 @@ button {
 
 .drink-card {
   display: grid;
+  grid-template-rows: auto 1fr;
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -595,6 +596,7 @@ button {
 }
 
 .drink-card strong {
+  align-self: end;
   color: var(--red-dark);
   font-size: 0.98rem;
 }
@@ -723,7 +725,12 @@ address strong {
 
 @media (max-width: 860px) {
   :root {
-    --header-height: 68px;
+    --header-height: 66px;
+  }
+
+  .site-header {
+    gap: 0.75rem;
+    padding-block: 0.6rem;
   }
 
   .nav-toggle {
@@ -750,11 +757,16 @@ address strong {
   }
 
   .site-nav a {
-    padding: 0.9rem 0.7rem;
+    min-height: 48px;
+    padding: 0.85rem 0.7rem;
   }
 
   .hero {
-    min-height: 66svh;
+    min-height: min(560px, 64svh);
+  }
+
+  .hero-photo {
+    transform: none;
   }
 
   .hero-shade {
@@ -764,7 +776,7 @@ address strong {
   }
 
   .hero-inner {
-    padding: 4rem 0 4.6rem;
+    padding: 3.5rem 0 3.9rem;
   }
 
   .quick-info,
@@ -777,8 +789,9 @@ address strong {
 
   .quick-info div {
     justify-content: flex-start;
-    min-height: 58px;
-    padding: 0.85rem var(--page-gutter);
+    min-height: 52px;
+    padding: 0.72rem var(--page-gutter);
+    font-size: 0.9rem;
     text-align: left;
   }
 
@@ -797,31 +810,67 @@ address strong {
 }
 
 @media (max-width: 560px) {
+  :root {
+    --header-height: 62px;
+  }
+
   body {
-    padding-bottom: 72px;
+    padding-bottom: calc(78px + env(safe-area-inset-bottom));
+    font-size: 0.96rem;
+  }
+
+  .site-header {
+    padding-inline: var(--page-gutter);
   }
 
   .brand-mark {
-    width: 40px;
-    height: 40px;
-    flex-basis: 40px;
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
   }
 
   .brand strong {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .brand small {
-    max-width: 12rem;
-    font-size: 0.76rem;
+    max-width: 10.5rem;
+    font-size: 0.7rem;
+  }
+
+  .nav-toggle {
+    width: 42px;
+    height: 42px;
   }
 
   .hero {
-    min-height: 62svh;
+    min-height: min(520px, 66svh);
   }
 
   .hero-inner {
-    padding: 3.3rem 0 3.8rem;
+    padding: 2.7rem 0 3rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 11vw, 3.2rem);
+    line-height: 1.02;
+  }
+
+  .hero-copy {
+    margin-top: 0.9rem;
+    font-size: 0.98rem;
+  }
+
+  .section {
+    padding: 2.65rem 0;
+  }
+
+  .section h2 {
+    font-size: clamp(1.55rem, 7vw, 2rem);
+  }
+
+  .section-heading {
+    margin-bottom: 1rem;
   }
 
   .hero-actions,
@@ -829,13 +878,29 @@ address strong {
     display: grid;
   }
 
+  .hero-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
   .button {
+    min-height: 44px;
+    padding: 0.72rem 0.8rem;
     width: 100%;
+  }
+
+  .hero-actions .button.primary {
+    grid-column: 1 / -1;
   }
 
   .menu-jump {
     margin-inline: calc(var(--page-gutter) * -1);
-    padding-inline: var(--page-gutter);
+    padding: 0.62rem var(--page-gutter);
+  }
+
+  .menu-jump a {
+    min-height: 38px;
+    padding: 0.5rem 0.72rem;
   }
 
   .menu-group,
@@ -845,13 +910,14 @@ address strong {
   }
 
   .menu-item.has-photo {
-    grid-template-columns: 76px minmax(0, 1fr);
+    grid-template-columns: 82px minmax(0, 1fr);
     gap: 0.75rem;
     align-items: start;
+    min-height: auto;
   }
 
   .dish-thumb {
-    width: 76px;
+    width: 82px;
   }
 
   .menu-item.has-photo strong {
@@ -859,12 +925,48 @@ address strong {
     justify-self: start;
   }
 
+  .menu-item h4 {
+    font-size: 0.98rem;
+  }
+
   .menu-item p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .menu-item strong {
+    display: inline-flex;
+    border-radius: 999px;
+    background: #fff1eb;
+    font-size: 0.94rem;
+    line-height: 1;
+    padding: 0.36rem 0.55rem;
   }
 
   .drink-grid {
     gap: 0.75rem;
+  }
+
+  .drink-card div {
+    padding: 0.72rem;
+  }
+
+  .drink-card h4 {
+    font-size: 0.94rem;
+  }
+
+  .drink-card p {
+    font-size: 0.82rem;
+    line-height: 1.42;
+  }
+
+  .drink-card span {
+    font-size: 0.66rem;
+    padding: 0.24rem 0.42rem;
+  }
+
+  .drink-card strong {
+    font-size: 0.92rem;
   }
 
   .drink-card-wide {
@@ -878,9 +980,9 @@ address strong {
 
   .mobile-actions {
     position: fixed;
-    right: 0.75rem;
-    bottom: 0.75rem;
-    left: 0.75rem;
+    right: 0.65rem;
+    bottom: max(0.65rem, env(safe-area-inset-bottom));
+    left: 0.65rem;
     z-index: 40;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -892,10 +994,10 @@ address strong {
     backdrop-filter: blur(12px);
   }
 
-.mobile-actions a {
+  .mobile-actions a {
     display: grid;
     min-width: 0;
-    min-height: 56px;
+    min-height: 58px;
     place-items: center;
     gap: 0.12rem;
     color: var(--green-dark);
@@ -921,7 +1023,7 @@ address strong {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 340px) {
   .brand small {
     display: none;
   }
