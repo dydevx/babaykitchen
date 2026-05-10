@@ -178,7 +178,7 @@ button {
 }
 
 .hero-photo {
-  background-image: url("images/menu/pho-tai-lan.jpg");
+  background-image: url("images/background.jpg"), url("images/menu/background.jpg");
   background-position: center;
   background-size: cover;
   transform: scale(1.02);
