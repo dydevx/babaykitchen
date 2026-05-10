@@ -22,7 +22,8 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 1rem);
+  scroll-padding-top: calc(var(--header-height) + constant(safe-area-inset-top) + 1rem);
+  scroll-padding-top: calc(var(--header-height) + env(safe-area-inset-top) + 1rem);
 }
 
 body {
@@ -69,6 +70,11 @@ button {
   border-bottom: 1px solid rgba(229, 222, 210, 0.86);
   background: rgba(251, 250, 245, 0.95);
   padding: 0.75rem var(--page-gutter);
+  /* Respect device safe-area (notch/status bar) on mobile */
+  padding-top: calc(0.75rem + constant(safe-area-inset-top));
+  padding-top: calc(0.75rem + env(safe-area-inset-top));
+  min-height: calc(var(--header-height) + constant(safe-area-inset-top));
+  min-height: calc(var(--header-height) + env(safe-area-inset-top));
   backdrop-filter: blur(14px);
 }
 
