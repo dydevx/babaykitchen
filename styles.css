@@ -101,15 +101,21 @@ button {
 }
 
 .brand-copy {
+  display: grid;
+  min-height: 48px;
   min-width: 0;
-  padding-block: 0.16rem;
+  align-content: center;
+  gap: 0.02rem;
+  overflow: visible;
+  padding: 0.2rem 0 0;
+  transform: translateY(2px);
 }
 
 .brand strong,
 .brand small {
   display: block;
   overflow: visible;
-  line-height: 1.38;
+  line-height: normal;
   text-overflow: clip;
   white-space: nowrap;
 }
@@ -840,15 +846,21 @@ address strong {
     flex-basis: 42px;
   }
 
+  .brand-copy {
+    min-height: 42px;
+    padding-top: 0.24rem;
+    transform: translateY(2px);
+  }
+
   .brand strong {
     font-size: 0.9rem;
-    line-height: 1.42;
+    line-height: normal;
   }
 
   .brand small {
     max-width: min(13.5rem, 58vw);
     font-size: 0.7rem;
-    line-height: 1.4;
+    line-height: normal;
   }
 
   .nav-toggle {
