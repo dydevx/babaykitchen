@@ -34,6 +34,18 @@
     </script>
   </head>
   <body>
+    <div class="announcement-modal" data-announcement-modal hidden>
+      <div class="announcement-backdrop" data-announcement-close></div>
+      <section class="announcement-card" role="dialog" aria-modal="true" aria-labelledby="announcement-title" tabindex="-1">
+        <button class="announcement-close" type="button" aria-label="Popup schlie&szlig;en" data-announcement-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <p class="announcement-badge">Neu</p>
+        <h2 id="announcement-title">Er&ouml;ffnung<br />B&agrave; B&#7843;y Kitchen</h2>
+        <p>Wir freuen uns darauf, Sie ab dem <strong>26.06.</strong> bei uns begr&uuml;&szlig;en zu d&uuml;rfen.</p>
+      </section>
+    </div>
+
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="BÀ BẢY KITCHEN Startseite">
         <span class="brand-mark"><img src="logo.jpg" alt="BÀ BẢY KITCHEN Logo" width="44" height="44" /></span>
