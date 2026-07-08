@@ -2,7 +2,6 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const header = document.querySelector("[data-header]");
 const year = document.querySelector("[data-year]");
-const footerInner = document.querySelector(".footer-inner");
 const announcementModal = document.querySelector("[data-announcement-modal]");
 const announcementCard = announcementModal?.querySelector(".announcement-card");
 const announcementCloseButtons = announcementModal
@@ -19,10 +18,6 @@ if (window.lucide) {
 
 if (year) {
   year.textContent = new Date().getFullYear();
-}
-
-if (footerInner) {
-  footerInner.innerHTML = "<p>&copy; 2026 BA BAY BEP</p><p>Gestaltet von Hoang Caster.</p>";
 }
 
 function openAnnouncement() {
