@@ -1515,8 +1515,9 @@ address strong {
 }
 
 .menu-item.featured-dish {
+  position: relative;
   border-radius: 10px;
-  background: #e1e9de;
+  background: linear-gradient(135deg, #dce8d8 0%, #edf2e9 100%);
   padding: clamp(0.8rem, 2vw, 1.1rem);
 }
 
@@ -1527,6 +1528,12 @@ address strong {
 
 .menu-item.featured-dish .dish-thumb {
   box-shadow: 0 0 0 3px var(--leaf-deep);
+}
+
+.featured-allergens {
+  background: var(--leaf-deep);
+  color: #fffaf4;
+  font-weight: 900;
 }
 
 .drink-subheading {
