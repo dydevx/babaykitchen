@@ -1498,6 +1498,16 @@ address strong {
   object-position: center;
 }
 
+.saigon-bier-thumb {
+  background: #1f4232;
+}
+
+.saigon-bier-thumb img,
+.menu-item:hover .saigon-bier-thumb img {
+  object-fit: contain;
+  transform: none;
+}
+
 .menu-item h4 {
   font-size: clamp(1.02rem, 1.8vw, 1.24rem);
 }
