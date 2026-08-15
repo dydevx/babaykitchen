@@ -1498,10 +1498,6 @@ address strong {
   object-position: center;
 }
 
-.saigon-bier-thumb {
-  background: #1f4232;
-}
-
 .saigon-bier-thumb img,
 .menu-item:hover .saigon-bier-thumb img {
   object-fit: contain;
